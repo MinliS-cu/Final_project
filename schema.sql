@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS NYC_trees
     id INTEGER PRIMARY KEY, 
     created_date date,
     zipcode TEXT,
-    location geometry,
+    location geometry(Point, 4326),
     species TEXT,
     health TEXT,
     status TEXT,
